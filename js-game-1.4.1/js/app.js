@@ -6,6 +6,7 @@ function loadLevels() {
     let url = './levels.json';
     if (location.hostname !== 'localhost') {
       url = 'https://neto-api.herokuapp.com/js/diplom/levels.json';
+      //url = './levels.json';
     }
     xhr.open('GET', url);
     xhr.addEventListener('error', e => fail(xhr));
